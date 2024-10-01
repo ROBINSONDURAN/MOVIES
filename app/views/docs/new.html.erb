@@ -1,0 +1,22 @@
+<h1>CREAR DOCUMENTALES</h1>
+
+<%= form_with model: @doc, method: :post do |form| %>
+    <div class="col-3">
+        <div>
+            <%= form.label :title, "Nombre documental" , class: "form-label" %>
+                <%= form.text_field :name, class: "form-control" %>
+        </div>
+        <div>
+            <%= form.label :content, "Sinopsis" , class: "form-label" %>
+                <%= form.text_field :synopsis, class: "form-control" %>
+        </div>
+        <div>
+             <%= form.label :content, "Nombre director" , class: "form-label" %>
+                <%= form.text_field :director, class: "form-control" %>
+        </div>
+        <br>   
+        <div>
+             <%= form.submit "Submit" , class: "btn btn-primary" %>
+        </div>
+    </div>
+<% end %>

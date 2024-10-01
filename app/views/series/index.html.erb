@@ -1,0 +1,24 @@
+<h1>LISTA DE SERIES</h1>
+
+
+<table>
+
+            <thead>
+                <tr> 
+                    <th scope="col">Nombre</th>
+                    <th scope="col">Director</th>
+                    <th class="col-large"  scope="col">Sinopsis</th>
+                </tr>
+            </thead>
+            <tbody>
+                <% @serie_all.each do |serie| %>
+                    <tr>
+                        <td> <%= serie.name %> </td>
+                        <td> <%= serie.director %> </td>
+                        <td> <%= serie.synopsis %> </td>
+                    </tr>
+                <% end %>
+            </tbody>
+        </table>
+                        
+

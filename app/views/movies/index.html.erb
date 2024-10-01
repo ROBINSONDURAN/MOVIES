@@ -1,0 +1,23 @@
+<h1>LISTA DE PELÍCULAS</h1>
+
+
+<table>
+
+            <thead>
+                <tr> 
+                    <th scope="col">Nombre</th>
+                    <th scope="col">Director</th>
+                    <th class="col-large"  scope="col">Sinopsis</th>
+                </tr>
+            </thead>
+            <tbody>
+                <% @movie_all.each do |movie| %>
+                    <tr>
+                        <td> <%= movie.name %> </td>
+                        <td> <%= movie.director %> </td>
+                        <td> <%= movie.synopsis %> </td>
+                    </tr>
+                <% end %>
+            </tbody>
+        </table>
+                        
